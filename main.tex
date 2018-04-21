@@ -2,14 +2,14 @@
 \usepackage[utf8]{inputenc}
 \usepackage{tabularx}
 \usepackage{graphicx}
-\title{1.laboratorijas darbs."Vienkāršu elektrisku shēmu modelēšana"}
-\author{Ruslans Babajans}
-\date{March 2018}
 \usepackage{verbatim}
 \usepackage{xcolor}
 \usepackage{tikz,pgfplots}
-\usepackage[american]{circuitikz}
+\usepackage{circuitikz}
 \usepackage{fixlatvian}
+\title{1.laboratorijas darbs."Vienkāršu elektrisku shēmu modelēšana"}
+\author{Ruslans Babajans}
+\date{Marts 2018}
 \begin{document}
 
 \maketitle
@@ -37,9 +37,9 @@ U2 &  5 V\\
 
 \begin{figure}[b]
 \centering
-\begin{circuitikz}
+\begin{circuitikz}[american voltages]
 \draw (8,2)
-      to[V,V=$U_s$] (8,6)
+      to[V=$U_s$] (8,6)
       to[R=$R_1$] (12,6)
       to[R=$R_2$] (12,2)
       to[short] (8,2);
